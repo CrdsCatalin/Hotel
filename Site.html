@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Grande</title>
+    <link rel="stylesheet" href="section3.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="Images/imageedit_36_7499184521.png" />
+    <link rel="stylesheet" href="Sectionone.css" />
+    <link rel="stylesheet" href="section-two.css" />
+    <link rel="stylesheet" href="section-four.css" />
+    <link rel="stylesheet" href="section-five.css" />
+    <link rel="stylesheet" href="book.css" />
+    <link rel="stylesheet" href="destination-section.css" />
+    <link rel="stylesheet" href="testimonials-section.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textWrapper = document.querySelector(".text-wrapper");
+
+        // Start animation
+        textWrapper.classList.add("scroll-animation");
+      });
+
+      // JavaScript to show images with delay
+      document.addEventListener("DOMContentLoaded", function () {
+        const recoveryImages = document.querySelectorAll(
+          "#clients-global-container img"
+        );
+        let currentIndex = 0;
+
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % recoveryImages.length;
+          const displacement = -currentIndex * (20 + 5); // 100% for the width, 10px for margin
+
+          recoveryImages.forEach((img) => {
+            img.style.transform = `translateX(${displacement}%)`;
+          });
+
+          // Check if there are no more images to show
+          if (currentIndex === 0) {
+            setTimeout(() => {
+              recoveryImages.forEach((img) => {
+                img.style.transition = "none"; // Disable transition for the reset
+                img.style.transform = "translateX(0)";
+              });
+              setTimeout(() => {
+                recoveryImages.forEach((img) => {
+                  img.style.transition = ""; // Re-enable transition after reset
+                });
+              }, 10); // Small delay before re-enabling transition
+            }, 900); // 1000ms delay before resetting to the initial position
+          }
+        }, 2000); // Adjust the interval (in milliseconds) as needed
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-header">
+        <div class="header-icon">
+          <img src="Images/imageedit_35_2931358126.png" class="header-logo" />
+        </div>
+
+        <div class="header-nav-links">
+          <a href="#">Travel Professionals</a>
+          <a href="#">API solutions</a>
+          <a href="#">Cooperations</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+
+      <div class="right-header">
+        <div class="header-language">
+          <img src="Images/language.png"">
+          <h4>English</h4>
+        </div>
+
+        <div class="header-login">
+          <button class="SIGNIN">SIGN IN</button>
+          <button class="REGISTER">REGISTER</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-one">
+        <div class="section-one-div">
+          <img
+            src="Images/white_dots_lines_background_hd_white_background-1600x900.jpg"
+            class="section-one-img"
+          />
+
+          <img
+            src="Images/798667_1-Hotel_Facilities_pictionary_3.jpg"
+            class="floating-imgs1"
+          />
+
+          <img src="Images/facilities-at-hotel-nk.jpg" class="floating-imgs2" />
+          <img src="Images/4855960-200.png" class="floating-imgs3" />
+
+          <img src="Images/4855960-200.png" class="floating-imgs6" />
+
+          <img src="Images/images.png" class="floating-imgs4" />
+
+          <img src="Images/testimonial.png" class="floating-imgs5" />
+
+          <div class="section-one-header">
+            <h1>Unrivalled online booking tool for travel professionals</h1>
+
+            <p class="section-one-header-p">
+              We lead the way in accommodation: 2.5M+ hotels worldwide from 230+
+              suppliers, air tickets, transfers, car rentals, and other
+              services.
+            </p>
+
+            <button>Get Started For Free</button>
+          </div>
+
+          <img src="Images/36211473.jpg" class="section-one-laptop" />
+        </div>
+      </section>
+
+      <section class="section-two">
+        <div class="section-two-container-one">
+          <div class="section-two-text-box">
+            <div class="section-two-container-header-div">
+              <h3>Supercharge your travel business</h3>
+              <div>
+                <h2>For travel professionals</h2>
+                <button>Learn More</button>
+              </div>
+            </div>
+
+            <div class="section-two-container-text">
+              <div>
+                <div class="sc-two-text-header">Get more profit</div>
+                <div class="sc-two-headersub-text">
+                  Enjoy our <span>profitable loyalty program</span> to earn
+                  points and use them to pay for bookings. Get special B2B rates
+                  and low prices to earn even more.
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">Control your income</div>
+                <div class="sc-two-headersub-text">
+                  Choose a work model, <span>Net or Gross</span>, that works for
+                  you. Pay by invoice or credit card, or use a credit limit to
+                  pay later.
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">
+                  Easily interact with clients
+                </div>
+                <div class="sc-two-headersub-text">
+                  <span>Use the Selection tool and Pay by Link option</span> to
+                  engage with clients and speed up your bookings even more.
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">
+                  Confidence in every booking
+                </div>
+                <div class="sc-two-headersub-text">
+                  We offer <span>24/7 multilingual support</span> and exclusive
+                  pre-check service to reconfirm each of your bookings.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-two-container-picture">
+            <img src="Images/GettyImages-200537468-001.png" />
+          </div>
+        </div>
+
+        <div class="section-two-container-one">
+          <div class="section-two-container-picture">
+            <img
+              src="Images/130185801-two-business-people-arriving-to-a-hotel-concept-of-business-travel.jpg"
+            />
+          </div>
+
+          <div class="section-two-text-box">
+            <div class="section-two-container-header-div">
+              <h3>Empower our clients' progress</h3>
+              <div>
+                <h2>For API integrations</h2>
+                <button>Learn More</button>
+              </div>
+            </div>
+
+            <div class="section-two-container-text">
+              <div>
+                <div class="sc-two-text-header">
+                  Fast and simple API integration
+                </div>
+                <div class="sc-two-headersub-text">
+                  Our architectural solution allows you to quickly and easily
+                  install the functionality
+                  <span>best suited for your business.</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">
+                  Rich hotel content every week
+                </div>
+                <div class="sc-two-headersub-text">
+                  Enjoy multilingual information about
+                  <span>2,500,000 hotels worldwide,</span> including names,
+                  geographical names, photos, and locations.
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">
+                  Hi-tech providers and mid-offices
+                </div>
+                <div class="sc-two-headersub-text">
+                  Use our high-tech providers for
+                  <span> fully customized and rapid integration.</span> You can
+                  also use mid-offices for accounting automation and financial
+                  reporting.
+                </div>
+              </div>
+
+              <div>
+                <div class="sc-two-text-header">
+                  Different integration models for you
+                </div>
+                <div class="sc-two-headersub-text">
+                  Select the integration business model that is
+                  <span>most convenient </span>and suited to you. Choose from
+                  net prices, commissions, or affiliates.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-two-container-two">
+          <div class="award-div">
+            <img src="Images/awards.ab9154f0.png" />
+            <div class="award-text">
+              <h5>World travel tech awards</h5>
+              <p>2023 • 2022</p>
+            </div>
+          </div>
+
+          <div class="animated-text-div">
+            <div class="text-wrapper">
+              <p class="text-with-borders">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum ea quasi voluptate necessitatibus cumque nobis natus
+                repudiandae voluptates perferendis, iste, sunt id. Odio
+                asperiores a magnam quia sit? Magnam, iure.
+              </p>
+            </div>
+          </div>
+
+          <div class="section-two-container-two-logos">
+            <img src="Images/Logo imgs/imageedit_37_3436066019.png" />
+            <img src="Images/Logo imgs/imageedit_38_7442894632.png" />
+            <img src="Images/Logo imgs/imageedit_39_2360954509.png" />
+            <img src="Images/Logo imgs/imageedit_46_3985098785.png" />
+            <img src="Images/Logo imgs/imageedit_52_2192621114.png" />
+            <img src="Images/Logo imgs/imageedit_56_2028446392.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-three">
+        <div class="section-three-container-one">
+          <span>Spread your wings</span>
+          <h1>
+            Book travel services from around the world. Anytime. Anywhere.
+          </h1>
+          <p>
+            Technology and travel agents' expertise come together to create a
+            supercharged product that increases your revenue and efficiency.
+            <br />
+            <br />
+            Check availability in real-time, book services, and receive booking
+            confirmations immediately.
+          </p>
+          <button>Register Now</button>
+        </div>
+
+        <div class="section-three-container-two">
+          <video controls>
+            <source
+              src="Images/RateHawk_ explore unrivalled online booking tool for travel professionals.mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+      <div class="section-three-icons">
+        <div class="section-three-icons-container">
+          <img src="Images/Logo imgs/international.png" />
+          <h3>Accommodation</h3>
+          <p>
+            Over 2.5M+ accommodation options in 220 countries and territories.
+          </p>
+        </div>
+
+        <div class="section-three-icons-container">
+          <img src="Images/Logo imgs/car (1).png" />
+          <h3>Transfers</h3>
+          <p>
+            Any type of transfer you need from micro to first-class available in
+            100+ countries.
+          </p>
+        </div>
+
+        <div class="section-three-icons-container">
+          <img src="Images/Logo imgs/takeoff-the-plane.png" />
+          <h3>Flights</h3>
+          <p>
+            Air tickets from 350 airlines worldwide, up to 9 passengers in a
+            single booking.
+          </p>
+        </div>
+
+        <div class="section-three-icons-container">
+          <img src="Images/Logo imgs/car.png" />
+          <h3>Car rental</h3>
+          <p>
+            Book a car for your clients within two minutes of sending a request
+            without leaving the site.
+          </p>
+        </div>
+      </div>
+
+      <section class="section-four">
+        <div class="section-four-text">
+          <h2>Hawks all over the world</h2>
+          <h3>Local RateHawk team — meet in person anytime</h3>
+          <p>
+            Just like our services, the RateHawk team operates all around the
+            globe.
+            <br />
+            You can find our sales and account team members in 54 regions –
+            ready to meet in person anytime, anywhere. Learn more about our
+            vacancies on the <a href="#">Career</a> page.
+          </p>
+        </div>
+
+        <div class="section-four-img">
+          <img
+            src="Images/map-world-world-map-countries-wallpaper-preview.jpg"
+          />
+
+          <div class="section-four-absolute-one">
+            <img src="Images/person1.jpg" />
+          </div>
+          <div class="section-four-absolute-two">
+            <img src="Images/person2.jpg" />
+          </div>
+          <div class="section-four-absolute-three">
+            <img src="Images/person3.jpg" />
+          </div>
+          <div class="section-four-absolute-four">
+            <img src="Images/Copy-of-Rustic-Female-Teen-Magazine-Cover.png" />
+          </div>
+          <div class="section-four-absolute-five">
+            <img src="Images/person6.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <div class="clients-global">
+        <div class="clients-global-text">
+          Trusted by 86,000+ clients globally
+        </div>
+
+        <div id="clients-global-container">
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image1"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image2"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image3"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image4"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image5"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image6"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image7"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image8"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image9"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image10"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image11"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image12"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image13"
+          />
+        </div>
+        <div id="clients-global-container">
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image1"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image2"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image3"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image4"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image5"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image6"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image7"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image8"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image9"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image10"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image11"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image12"
+          />
+          <img
+            src="Images/Clients logo/imageedit_58_8412694516.png"
+            alt="image13"
+          />
+        </div>
+      </div>
+
+      <section class="section-five">
+        <div class="section-five-container">
+          <img src="Images/person4.avif" />
+
+          <div class="section-five-container-absolute">
+            <div class="section-five-container-absolute-one">
+              <h4>Become a super travel agent</h4>
+              <h2>You're one step away. Get access to prices and bookings.</h2>
+              <p>
+                Quick, one-step registration to get access to the world. No
+                waiting time. No fees. Fill in the form and start booking.
+              </p>
+              <button>Join Hotel Grande</button>
+            </div>
+            <div class="section-five-container-absolute-two">
+              <img src="Images/imageedit_74_5933337540.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section-five-container-two">
+          <h1 class="sc-five-header">News and promo</h1>
+
+          <div class="section-five-container-two-div-content">
+            <div class="section-five-container-div-content-one">
+              <div class="section-div-content-one-img-div">
+                <img src="Images/artical1.jpg" alt="" />
+
+                <div class="artical-absolute">
+                  <button>Read Artical</button>
+                </div>
+              </div>
+
+              <div class="section-div-content-one-img-subtext">
+                <p>
+                  Boost Your Success Booking Rates With RateHawk’s New Pre-Book
+                  API Feature
+                </p>
+              </div>
+
+              <div class="section-div-content-one-schedual-events">
+                <span
+                  ><img src="Images/Logo imgs/calendar.png" />16.02.2024</span
+                >
+                <span>
+                  <img src="Images/Logo imgs/clock.png" />7 hours ago
+                </span>
+              </div>
+            </div>
+            <div class="section-five-container-div-content-one">
+              <div class="section-div-content-one-img-div">
+                <img src="Images/artical2.jpg" alt="" />
+
+                <div class="artical-absolute">
+                  <button>Read Artical</button>
+                </div>
+              </div>
+
+              <div class="section-div-content-one-img-subtext">
+                <p>
+                  Make Each Trip Count: RateHawk Teams Up With Travelport CETS
+                </p>
+              </div>
+
+              <div class="section-div-content-one-schedual-events">
+                <span
+                  ><img src="Images/Logo imgs/calendar.png" />31.01.2024</span
+                >
+                <span>
+                  <img src="Images/Logo imgs/clock.png" />16 days ago
+                </span>
+              </div>
+            </div>
+            <div class="section-five-container-div-content-one">
+              <div class="section-div-content-one-img-div">
+                <img src="Images/artical3.png" alt="" />
+
+                <div class="artical-absolute">
+                  <button>Read Artical</button>
+                </div>
+              </div>
+
+              <div class="section-div-content-one-img-subtext">
+                <p>Recapping the Best of RateHawk Blog in 2023</p>
+              </div>
+
+              <div class="section-div-content-one-schedual-events">
+                <span
+                  ><img src="Images/Logo imgs/calendar.png" />28.12.2023</span
+                >
+                <span>
+                  <img src="Images/Logo imgs/clock.png" />2 months ago
+                </span>
+              </div>
+            </div>
+            <div class="section-five-container-div-content-one">
+              <div class="section-div-content-one-img-div">
+                <img src="Images/artical5.jpg" alt="" />
+
+                <div class="artical-absolute">
+                  <button>Read Artical</button>
+                </div>
+              </div>
+
+              <div class="section-div-content-one-img-subtext">
+                <p>
+                  Empowering Travel Professionals: Skift and RateHawk Discuss
+                  the Insights Shaping the Trajectory of Online Travel
+                </p>
+              </div>
+
+              <div class="section-div-content-one-schedual-events">
+                <span
+                  ><img src="Images/Logo imgs/calendar.png" />21.12.2023</span
+                >
+                <span>
+                  <img src="Images/Logo imgs/clock.png" />2 months ago
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-five-container-three">
+          <div class="section-five-container-three-content">
+            <img
+              src="Images/yellow-background-with-white-lines-star-top_687553-1838.avif"
+              alt=""
+            />
+
+            <div class="section-five-container-three-person">
+              <img src="Images/imageedit_81_5711729061.png" alt="" />
+            </div>
+
+            <div class="section-five-container-three-absolute">
+              <h2>Spread your wings with RateHawk</h2>
+              <button>Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="book-div">
+        <div class="book-header">
+          <h2>Buy Our Latest Book!!!</h2>
+          <h4>Learn More About Hotels And Management :)</h4>
+        </div>
+
+        <div class="book-container">
+          <div class="book-img-container">
+            <img src="Images/19BOOKJACOBS-superJumbo.png" alt="" />
+          </div>
+
+          <div class="book-container-text">
+            <h1>The Pink Hotel by Anna Stothard</h1>
+
+            <h3>
+              "The Pink Hotel" is a novel written by Anna Stothard. Set in Los
+              Angeles, the story follows a young woman who travels to California
+              following her estranged mother's death. Upon her arrival, she
+              delves into her mother's mysterious past, uncovering secrets and
+              encountering a cast of colorful characters. The novel weaves
+              together themes of family, identity, and self-discovery against
+              the backdrop of the vibrant and enigmatic city of Los Angeles.
+            </h3>
+
+            <a href="">Learn more about the author and the book - Here -</a>
+            <div class="price-div">
+              <span class="current-price">Buy now just for 14.99$ Dolars</span>
+              <span class="old-price">From 20.99$ Dolars</span>
+            </div>
+            <button>Buy now</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="destinations">
+        <div class="explore-destinations-container">
+          <h2 class="trending-destinations">
+            Explore stays in trending destinations
+          </h2>
+          <div class="destinations-div">
+            <div class="destination-container">
+              <div class="destination-picture-container">
+                <img src="Images/Destinations/miami.jpeg" alt="" />
+              </div>
+              <div class="destination-picture-subtext">
+                <span class="destination-name">Miami Beach</span>
+                <span class="destination-location"
+                  >United States of America</span
+                >
+              </div>
+            </div>
+
+            <div class="destination-container">
+              <div class="destination-picture-container">
+                <img src="Images/Destinations/croatia.jpeg" alt="" />
+              </div>
+              <div class="destination-picture-subtext">
+                <span class="destination-name">Split</span>
+                <span class="destination-location">Croatia</span>
+              </div>
+            </div>
+
+            <div class="destination-container">
+              <div class="destination-picture-container">
+                <img src="Images/Destinations/miami-city.jpeg" alt="" />
+              </div>
+              <div class="destination-picture-subtext">
+                <span class="destination-name">Miami</span>
+                <span class="destination-location"
+                  >United States of America</span
+                >
+              </div>
+            </div>
+
+            <div class="destination-container">
+              <div class="destination-picture-container">
+                <img src="Images/Destinations/NEW YORK.jpeg" alt="" />
+              </div>
+              <div class="destination-picture-subtext">
+                <span class="destination-name">New York</span>
+                <span class="destination-location"
+                  >United States of America</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="last-minute-deal-container">
+          <div class="last-minute-deal-header">
+            <h2 class="minute-deal">Last-minute weekend deals</h2>
+            <button class="minute-button">See all deals</button>
+          </div>
+
+          <div class="last-minute-deal-offers">
+            <span class="show-date">Showing deals for: 23 Feb - 25 Feb</span>
+
+            <div class="last-minute-offers">
+              <div class="deal-container">
+                <div class="deal-picture-container">
+                  <img src="Images/Destinations/hotel-rooom.jpeg" alt="" />
+                </div>
+                <div class="deal-subtext-container">
+                  <p class="review-deal">9.4/10 Exceptional (8 reviews)</p>
+                  <p class="hotel-deal-name">Le Blanc Aporthotel</p>
+                  <p class="hotel-deal-location">Bucharest</p>
+                  <p class="hotel-deal-price">
+                    $160 <span>$312</span>
+                    <img src="Images/Destinations/info.png" alt="" />
+                  </p>
+
+                  <p class="hotel-price-facilities">
+                    for 2 nights <br />$80 per night <br />
+                    includes taxes & fees
+                  </p>
+
+                  <p class="discount">
+                    <span class="span-discount">50% off</span>
+                    <span class="member-price">Member Price available </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="deal-container">
+                <div class="deal-picture-container">
+                  <img src="Images/Destinations/hotel-room2.jpeg" alt="" />
+                </div>
+                <div class="deal-subtext-container">
+                  <p class="review-deal">9.8/10 Exceptional (93 reviews)</p>
+                  <p class="hotel-deal-name">
+                    Ca Bonfadini Historice Experience
+                  </p>
+                  <p class="hotel-deal-location">Venice</p>
+                  <p class="hotel-deal-price">
+                    $898 <span>$1,277</span>
+                    <img src="Images/Destinations/info.png" alt="" />
+                  </p>
+
+                  <p class="hotel-price-facilities">
+                    for 2 nights <br />$449 per night <br />
+                    includes taxes & fees
+                  </p>
+
+                  <p class="discount">
+                    <span class="span-discount">30% off</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="deal-container">
+                <div class="deal-picture-container">
+                  <img src="Images/Destinations/hotel-room3.jpeg" alt="" />
+                </div>
+                <div class="deal-subtext-container">
+                  <p class="review-deal">9.6/10 Exceptional (139 reviews)</p>
+                  <p class="hotel-deal-name">Hotel Yllen Eiffel</p>
+                  <p class="hotel-deal-location">Paris</p>
+                  <p class="hotel-deal-price">
+                    $347 <span>$512</span>
+                    <img src="Images/Destinations/info.png" alt="" />
+                  </p>
+
+                  <p class="hotel-price-facilities">
+                    for 2 nights <br />$137 per night <br />
+                    includes taxes & fees
+                  </p>
+
+                  <p class="discount">
+                    <span class="span-discount">39% off</span>
+                    <span class="member-price">Member Price available </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="deal-container">
+                <div class="deal-picture-container">
+                  <img src="Images/Destinations/hotel-room4.jpeg" alt="" />
+                </div>
+                <div class="deal-subtext-container">
+                  <p class="review-deal">9.4/10 Exceptional (752 reviews)</p>
+                  <p class="hotel-deal-name">The Stafford London</p>
+                  <p class="hotel-deal-location">London</p>
+                  <p class="hotel-deal-price">
+                    $1,528 <span>$1,910</span>
+                    <img src="Images/Destinations/info.png" alt="" />
+                  </p>
+
+                  <p class="hotel-price-facilities">
+                    for 2 nights <br />$764 per night <br />
+                    includes taxes & fees
+                  </p>
+
+                  <p class="discount">
+                    <span class="span-discount">20% off</span>
+                    <span class="member-price">Member Price available </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-app-container">
+          <div class="hotel-app-div">
+            <div class="hotel-app-picture">
+              <img
+                src="Images/Destinations/HCOM_POOL_Stocksy_300dpi.jpg"
+                alt=""
+              />
+            </div>
+            <div class="hotel-app-text">
+              <h2>With the Hotels.com app, you can:</h2>
+              <li>Save on select hotels</li>
+              <li>Earn one reward night* for every 10 nights you stay</li>
+              <li>Search, book, and save on the go</li>
+              <p class="scan-qr">
+                Scan the QR code with your device camera and download our app
+              </p>
+              <a href="">*See Hotels.com Rewards terms & conditions</a>
+            </div>
+            <div class="hotel-app-qr">
+              <img src="Images/Destinations/qr.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="testimonials-header">
+          <h2>Fiind out what our customers think</h2>
+          <h4>
+            Află cum clienții noștri își cresc eficiența și mențin costurile
+            operaționale scăzute cu platforma noastra.
+          </h4>
+        </div>
+
+        <div class="testimonials-review-container">
+          <div class="testimonial-review">
+            <div class="testimonial-review-header">
+              <h4>Tehnologie modernă</h4>
+            </div>
+
+            <div class="testimonial-review-text">
+              <p>
+                Am renunțat la un sistem instalat pentru Pynbooking Cloud şi a
+                fost cea mai bună alegere. Nu are costuri iniţiale şi este
+                simplu de implementat si utilizat, fără cunoştinţe tehnice. 95%
+                dintre rezervări sunt facute acum online, prin Booking Engine,
+                iar informațiile introduse de clienţi sunt preluate automat de
+                sistem. Am eliminat prelucrarea manuală a datelor, iar oaspeții
+                nu mai așteaptă în Recepție pentru checkin/checkout sau emiterea
+                unei facturi.
+              </p>
+            </div>
+
+            <div class="testimonial-review-person">
+              <div class="testimonial-review-person-picture">
+                <img src="Images/Clients logo/Laurentiu.jpeg" alt="" />
+              </div>
+              <div class="testimonial-review-person-text">
+                <h3>Laurenţiu Tîrcă</h3>
+                <p>Manager</p>
+                <p>Zaga Zaga</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-review">
+            <div class="testimonial-review-header">
+              <h4>Ușor de folosit</h4>
+            </div>
+
+            <div class="testimonial-review-text">
+              <p>
+                Cu ajutorul Pynbooking Guest APP, mi-am făcut check-in la hotel
+                de pe telefon, înainte de sosire; când am vrut să comand ceva la
+                restaurant am făcut-o prin aplicație tot de pe telefon; iar nota
+                de plată la final am plătit-o cu cardul, tot pe telefon, fără să
+                mai trec prin recepție. Cam așa arată viitorul. Mi-ar plăcea să
+                vad tot mai multe unități de cazare care aleg astfel de soluții
+                digitale, atât pentru noi, ca turiști, dar și pentru eficiența
+                business-ului.
+              </p>
+            </div>
+
+            <div class="testimonial-review-person">
+              <div class="testimonial-review-person-picture">
+                <img src="Images/Clients logo/RazvanPascu.jpg" alt="" />
+              </div>
+              <div class="testimonial-review-person-text">
+                <h3>Razvan Pascu</h3>
+                <p>Antreprenor</p>
+                <p>Consultant în Turism</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-review">
+            <div class="testimonial-review-header">
+              <h4>Totul automatizat</h4>
+            </div>
+
+            <div class="testimonial-review-text">
+              <p>
+                Eu am spus DA pilotului automat. Acum oaspeții mei își fac
+                rezervările online, pe site-ul meu sau pe alte site-uri, plătesc
+                online şi primesc automat prin SMS un "Magic Link", cu acces la
+                Guest APP pe telefonul mobil. De aici, prin doar 3 touch-uri fac
+                check-in şi sunt în camere. Fără implicarea unui operator uman.
+                Toate operațiunile sunt automatizate, iar câștigul de timp este
+                evident. Sunt extrem de mulțumit, l-am recomandat și altora.
+              </p>
+            </div>
+
+            <div class="testimonial-review-person">
+              <div class="testimonial-review-person-picture">
+                <img src="Images/Clients logo/AdrianOjog.jpeg" alt="" />
+              </div>
+              <div class="testimonial-review-person-text">
+                <h3>Adrian Ojog</h3>
+                <p>Antreprenor</p>
+                <p>Charter Hotel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="easy-to-manage">
+        <div class="easy-to-manage-header">
+          <h2>Easy to book.</h2>
+          <h2>Easy to manage.</h2>
+        </div>
+        <div class="easy-to-manage-container">
+          <div class="easy-to-manage-container-div">
+            <div class="easy-to-manage-picture-container">
+              <img src="Images/Clients logo/map768.e36b8fc0.png" alt="" />
+            </div>
+            <div class="easy-to-manage-container-text">
+              <h4>Intelligent product for efficient workflow</h4>
+              <p>
+                Based on our tech experience and travel industry knowledge, we
+                designed a lightning-fast search engine and a responsive
+                interface to streamline your travel booking services for hotels,
+                air tickets, and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="easy-to-manage-container-div">
+            <div class="easy-to-manage-container-text">
+              <h4>Sell to your clients effectively</h4>
+              <p>
+                Rich hotel content and an extensive review base are designed to
+                help you pick only the best accommodations. Combine different
+                options with the Selection tool, and add commission and
+                discounts to help your client make the right choice.
+              </p>
+
+              <button class="easy-to-manage-button">Register</button>
+            </div>
+
+            <div class="easy-to-manage-picture-container">
+              <img src="Images/Clients logo/hotels768.f5e3ed03.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-div-one">
+          <div class="footer-one-imgs-container">
+            <img src="Images/Clients logo/facebook.png" alt="" />
+            <img src="Images/Clients logo/linkedin.png" alt="" />
+            <p>Career</p>
+            <p>Blog</p>
+          </div>
+        </div>
+        <div class="footer-div-two">
+          <p>
+            Leaside Services Limited, reg.no HE342401, Business Address: 17
+            Karaiskaki Street, Office 22, Agaia Triada, Limassol, Cyprus, 3032
+            <br />
+            Emerging Travel Inc., reg.no 4869611, Business Address: 1000 N West
+            Street, Suite 1200, Wilmington, DE 19801 USA EMERGING TRAVEL UK
+            <br />
+            LIMITED, Company number 12185384, Business Address: 19 Eastbourne
+            Terrace, Office 3.01, Paddington, London, W2 6LG, UK Emerging Travel
+            Germany ETG GmbH, HRB 213546, Business Address: Friedrichstraße 171,
+            10117 Berlin, Germany Emerging Travel Kazakhstan LLP, BIN
+            191240026456, Business address: Office SP2-18, 280 Baizakova Street,
+            Bostandykskiy district, 050040, Almaty, Republic of Kazakhstan Smart
+            <br />
+            Middle East Travel Agency L.L.C, Reg.no: 861543, Business address:
+            Al Babtain Building, Office 129-309, Port Saeed, Dubai, United Arab
+            Emirates, 97080
+          </p>
+
+          <p>Personal data processing and storage policy</p>
+
+          <p>Registered service mark in the European Union</p>
+          <p>Copyright © 2010-2024 Freepik Company S.L. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+.section-two{
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  border-bottom: 3px solid blue;
+  border-top: 3px solid blue;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.section-two-container-one{
+  width: 98%;
+  margin: auto;
+  height: 33.3%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.section-two-text-box{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section-two-container-picture{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.section-two-container-picture img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.section-two-container-header-div{
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.section-two-container-header-div h3{
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: rgb(254, 221, 0);
+}
+
+.section-two-container-header-div div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 80%;
+}
+
+.section-two-container-header-div h2{
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-two-container-header-div button{
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  width: 135px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.section-two-container-header-div button:hover{
+border: 3px solid white;
+transition-delay: 0.3s;
+}
+
+.section-two-container-text{
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sc-two-text-header{
+  width: 90%;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 1rem;
+  border-bottom:3px solid rgb(254, 221, 0);
+}
+
+.sc-two-headersub-text{
+  padding-top: 1rem;
+  width: 95%;
+  font-size: 16px;
+}
+
+.sc-two-headersub-text span{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1281px) {
+  .section-two-container-header-div div{
+    width: 90%;
+  }
+
+  .sc-two-text-header{
+    font-size: 20px;
+  }
+
+}
+
+
+@media screen and (max-width:1024px) {
+  .section-two-container-header-div h3{
+    font-size: 35px;
+  }
+
+  .section-two-container-header-div h2{
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section-two-container-header-div h3 {
+    font-size: 25px;
+  }
+
+  .section-two-container-header-div h2 {
+    font-size: 21px;
+  }
+
+  .section-two-container-header-div div{
+    width: 95%;
+  }
+
+  .section-two-container-text{
+    height: 75%;
+  }
+  .section-two-container-header-div button{
+    height: 30px;
+  }
+
+  .sc-two-text-header{
+    font-size: 18px;
+  }
+
+  .sc-two-headersub-text span{
+    font-size: 16px;
+  }
+  .sc-two-headersub-text{
+    width: 180px;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+
+  .section-two-container-header-div h3 {
+      font-size: 21px;
+    }
+  
+    .section-two-container-header-div h2 {
+      font-size: 16px;
+    }
+
+    .section-two-container-header-div button {
+      width: 125px;
+    }
+
+        .sc-two-text-header {
+          font-size: 16px;
+        }
+
+        .section-two-container-text div{
+          width: 97%;
+        }
+
+.sc-two-headersub-text span {
+  font-size: 14.8px;
+}
+
+    .sc-two-headersub-text {
+      width: 160px;
+      font-size: 13px;
+      margin-right: 5px;
+    }
+
+}
+
+
+@media screen and (max-width:476px) {
+  .section-two-container-picture{
+    display: none;
+  }
+  .section-two-container-picture img{
+    display: none;
+  }
+
+  .section-two-text-box{
+    width: 100%;
+  }
+
+    .section-two-container-header-div h3 {
+      font-size: 30px;
+    }
+
+        .section-two-container-header-div h2 {
+          font-size: 30px;
+        }
+
+        .sc-two-headersub-text {
+      width: 220px;
+      font-size: 18px;
+      margin-right: 5px;
+    }
+        
+        .sc-two-text-header {
+          font-size: 20px;
+        }
+
+}
+
+
+@media screen and (max-width:376px) {
+.section-two-container-header-div h3 {
+    font-size: 25px;
+  }
+.section-two-container-header-div h2 {
+  font-size: 20px;
+}
+
+ .sc-two-headersub-text {
+   width: 175px;
+   font-size: 15px;
+   margin-right: 5px;
+ }
+
+    .sc-two-text-header {
+      font-size: 17px;
+    }
+
+}
+
+
+.section-two-container-two{
+  width: 93%;
+  height: 30%;
+  margin: auto;
+}
+
+.award-div{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-text{
+  margin-left: 1rem;
+  font-family: 'Protest Strike', sans-serif;
+}
+
+.award-text h5{
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.award-text p{
+  margin-top: 0px;
+  font-size: 25px;
+  word-spacing: 15px;
+}
+
+.animated-text-div{
+  width: 100%;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+    .text-wrapper {
+      white-space: nowrap;
+      animation: scrollText 60s linear infinite;
+    }
+
+        .text-wrapper {
+          animation-delay: -30s;
+          /* Negative delay to start immediately */
+        }
+
+.text-with-borders{
+  white-space: nowrap;
+}
+
+.text-with-borders {
+  font-size: 160px;
+  font-weight: bold;
+  /* Adjust font size as needed */
+  position: relative;
+  color: black;
+  text-shadow:
+      1px 1px 0 yellow,
+      -1px 1px 0 yellow,
+      1px -1px 0 yellow,
+      -1px -1px 0 yellow;
+    overflow: hidden; 
+      animation: revealText 20s linear forwards;
+      opacity: 0;
+    }
+
+        @keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.text-with-borders::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: yellow;
+  overflow: hidden;
+}
+
+.text-with-borders::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: black;
+}
+
+.section-two-container-two-logos{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-two-container-two-logos img{
+  width: 10vw;
+  height: 50%;
+}
+
+@media screen and (max-width:476px) {
+  .award-text h5{
+    font-size: 20px;
+    padding-top: 18px;
+  }
+    .award-text p {
+      font-size: 20px;
+    }
+
+    .award-div img{
+      height: 80px;
+    }
+
+    .section-two-container-two-logos img{
+      width: 60px;
+      height: 70px;
+    }
+}
+
+@media screen and (max-width:376px) {
+  .award-text p {
+      font-size: 15px;
+      margin-top: 6px;
+    }
+
+    .text-with-borders{
+      font-size: 100px;
+    }
+}

@@ -1,0 +1,243 @@
+.book-div{
+  background-color: pink;
+  width: 98%;
+  margin: auto;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+border-bottom: 3px solid blue;
+}
+
+.book-header{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-header h2{
+  font-size: 60px;
+  text-shadow:
+      1px 1px 0 yellow,
+      -1px 1px 0 yellow,
+      1px -1px 0 yellow,
+      -1px -1px 0 yellow;
+}
+
+.book-header h4{
+  font-size: 40px;
+  text-shadow: 1px 1px 0 red,
+  -1px 1px 0 red,1px 1px 0 red,
+    -1px 1px 0 red;
+}
+
+.book-container{
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.book-img-container{
+  width: 60%;
+  height: 100%;
+}
+
+.book-img-container img{
+  width: 100%;
+  height: 98%;
+  border-radius: 5px;
+}
+
+.book-container-text{
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.book-container-text h1{
+  font-family: 'Protest Strike', sans-serif;
+}
+
+.book-container-text h3{
+  font-size: 20px;
+}
+
+.book-container-text a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: chocolate;
+}
+
+.book-container-text button{
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: blue;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.book-container-text button:hover {
+  opacity: 0.8;
+}
+
+.price-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-price{
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.old-price{
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+/* MEDIA QUARES*/
+
+@media screen and (max-width:1024px) {
+  .book-container-text h1{
+    white-space: nowrap;
+  }
+
+  .current-price{
+    margin-bottom: 20px;
+  }
+  .book-container-text a{
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .book-container-text h1{
+    font-size: 27px;
+  }
+
+  .book-container-text a{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .old-price{
+    margin-bottom: 1rem;
+  }
+
+  .book-header h4{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  .book-header h2{
+    font-size: 50px;
+  }
+
+  .book-header h4{
+    font-size: 35px;
+  }
+
+  .book-container-text h1{
+    font-size: 22px;
+  }
+
+  .book-container-text h3{
+    font-size: 18px;
+  }
+
+  .current-price{
+    font-size: 18px;
+  }
+
+  .book-img-container img{
+    height: 70%;
+  }
+
+  .book-img-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  
+}
+
+@media screen and (max-width:476px) {
+  .book-header h2{
+    font-size: 40px;
+  }
+  .book-header h4{
+    font-size: 30px;
+  }
+
+  .book-container-text h1{
+    font-size: 16px;
+  }
+
+  .book-container-text h3{
+    font-size: 14px;
+  }
+
+  .book-container-text a{
+    font-size: 17px;
+  }
+  .current-price{text-align: center;}
+
+  .book-img-container{
+    align-items: normal;
+  }
+
+  .book-container-text button{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .book-header h2{
+    font-size: 35px;
+  }
+
+  .book-header h4{
+    font-size: 25px;
+  }
+
+  .book-container-text h1{
+    font-size: 13px;
+  }
+
+  .book-container-text h3{
+    font-size: 12px;
+  }
+  .book-container-text a{
+    font-size: 14px;
+  }
+  .current-price{
+    font-size: 15px;
+  }
+  .old-price{
+    font-size: 15px;
+  }
+  .book-container-text button{
+    font-size: 13px;
+    width: 170px;
+  }
+}

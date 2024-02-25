@@ -1,0 +1,438 @@
+.section-five{
+  width: 100%;
+  height: 15%;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+}
+
+.section-five-container{
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+
+.section-five-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.section-five-container-absolute{
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+display: flex;
+flex-direction: row;
+}
+
+.section-five-container-absolute-one{
+height: 100%;
+width: 50%;
+padding-left: 1rem;
+}
+
+.section-five-container-absolute-one h4{
+color: rgb(254, 221, 0);
+font-size: 40px;
+font-family: 'Protest Strike', sans-serif;
+}
+
+.section-five-container-absolute-one h2{
+  font-family: 'Protest Strike', sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+.section-five-container-absolute-one p{
+color: white;
+font-size: 27px;
+}
+
+.section-five-container-absolute-one button{
+color: white;
+font-weight: bold;
+border: none;
+background-color: blue;
+font-size: 20px;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.section-five-container-absolute-one button:hover{
+  opacity: 0.8;
+}
+
+.section-five-container-absolute-two{
+height: 100%;
+  width: 50%;
+}
+
+.section-five-container-absolute-two img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+.section-five-container-two{
+  width: 100%;
+  height: 30%;
+  background-color: yellow;
+}
+
+
+.sc-five-header{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.section-five-container-two-div-content{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-five-container-div-content-one{
+  width: 25%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.section-div-content-one-img-div{
+  width: 95%;
+  height: 60%;
+  margin: auto;
+  position: relative;
+}
+.section-div-content-one-img-div img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.section-div-content-one-img-subtext p{
+font-size: 20px;
+cursor: pointer;
+height: 70px;
+}
+
+.section-div-content-one-img-subtext p:hover {
+  color: brown ;
+}
+
+.section-div-content-one-schedual-events{
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  border-top: 1px solid black;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.section-div-content-one-schedual-events span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.section-div-content-one-schedual-events span img{
+  padding-right: 1rem;
+}
+
+.artical-absolute{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.607);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.artical-absolute button{
+font-weight: bold;
+height: 30px;
+width: 150px;
+border: 2px solid white;
+background-color: transparent;
+color: aliceblue;
+font-size: 15px;
+cursor: pointer;
+}
+
+.artical-absolute button:hover{
+  border: 4px solid white;
+}
+
+
+.section-div-content-one-img-div:hover .artical-absolute{
+  opacity: 1;
+}
+
+
+
+
+.section-five-container-three{
+  width: 100%;
+  height: 40%;
+}
+
+.section-five-container-three-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section-five-container-three-content img{
+  width: 100%;
+  height: 100%;
+}
+
+.section-five-container-three-person {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 70%;
+}
+
+.section-five-container-three-person img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-five-container-three-absolute{
+  position: absolute;
+  top: 15rem;
+  right: 24rem;
+  width: 500px;
+}
+.section-five-container-three-absolute h2{
+      font-family: 'Protest Strike', sans-serif;
+      font-size: 60px;
+}
+
+.section-five-container-three-absolute button{
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  border: none;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section-five-container-three-absolute button:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width:1280px) {
+  .section-div-content-one-img-subtext p{
+    font-size: 17px;
+  }
+
+  .section-five-container-three-absolute{
+    right: 16rem;
+    top: 10rem;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+.section-five-container-absolute-one h2{
+  font-size: 45px;
+}
+
+.section-five-container-absolute-two img{
+  width: 100%;
+  height: 100%;
+}
+
+ .section-five-container-three-absolute {
+   right: 10rem;
+   top: 8rem;
+ }
+}
+
+@media screen and (max-width:768px) {
+  .section-div-content-one-img-subtext p{
+    font-size: 13px;
+  }
+
+  .section-div-content-one-schedual-events img{
+    width: 24px;
+    height: 24px;
+  }
+  .sc-five-header{
+    font-size: 35px;
+  }
+    .section-five-container-absolute-one h2 {
+      font-size: 30px;
+    }
+    .section-five-container-absolute-one h4{
+      font-size: 28px;
+    }
+        .section-five-container-absolute-two {
+          width: 70%;
+          height: 70%;
+          margin: auto;
+        }
+
+        .section-five-container-three-absolute {
+          right: 3rem;
+          width: 400px;
+          top: 12rem;
+        }
+
+        .section-five-container-three-absolute h2{
+          font-size: 40px;
+          width: 400px;
+        }
+        .section-five-container-three-absolute button{
+          font-size: 18px;
+        }
+}
+
+@media screen and (max-width:640px) {
+
+  .section-five-container-absolute-one h4{
+    font-size: 21px;
+  }
+    .section-five-container-absolute-one h2 {
+      font-size: 28px;
+    }
+    .section-five-container-absolute-one p{
+      font-size: 24px;
+    }
+
+    .section-five-container-absolute-one button {
+      font-size: 15px;
+    }
+
+.section-five-container-absolute-two {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.section-five-container-three-absolute {
+  right: 6rem;
+  width: 300px;
+  top: 12rem;
+}
+
+.section-five-container-three-absolute h2 {
+  font-size: 35px;
+  width: 300px;
+}
+
+.section-five-container-three-absolute button {
+  font-size: 16px;
+}
+
+
+}
+
+@media screen and (max-width:476px) {
+  .section-five-container-absolute-two {
+      width: 50%;
+      height: 40%;
+      margin: auto;
+    }
+    .section-five-container-div-content-one p{
+      font-size: 12px;
+    }
+    .section-div-content-one-schedual-events span img{
+      width: 16px;
+      height: 16px;
+      padding-right: 10px;
+    }
+
+    .section-div-content-one-schedual-events span{
+      font-size: 12px;
+    }
+
+    .section-div-content-one-img-subtext p{
+      font-size: 11px;
+    }
+    .sc-five-header {
+      font-size: 25px;
+    }
+
+.section-five-container-three-absolute {
+  right: 3rem;
+  width: 250px;
+  top: 12rem;
+}
+
+.section-five-container-three-absolute h2 {
+  font-size: 30px;
+  width: 250px;
+}
+
+.section-five-container-three-absolute button {
+  font-size: 13px;
+}
+
+}
+
+@media screen and (max-width:376px) {
+  .section-five-container-absolute-one h4 {
+      font-size: 16px;
+    }
+  
+    .section-five-container-absolute-one h2 {
+      font-size: 24px;
+    }
+  
+    .section-five-container-absolute-one p {
+      font-size: 22px;
+    }
+  
+    .section-five-container-absolute-one button {
+      font-size: 14px;
+    }
+        .section-div-content-one-img-subtext p {
+          font-size: 9px;
+        }
+
+    .section-div-content-one-schedual-events span {
+      font-size: 10px;
+    }
+
+.section-five-container-three-absolute {
+  right: 2rem;
+  width: 200px;
+  top: 25rem;
+}
+
+.section-five-container-three-absolute h2 {
+  font-size: 25px;
+  width: 200px;
+}
+
+.section-five-container-three-absolute button {
+  font-size: 11px;
+}
+
+    
+}

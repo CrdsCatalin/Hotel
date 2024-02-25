@@ -1,0 +1,190 @@
+html,
+body{
+  font-family: 'Roboto', sans-serif, arial;
+  height: 2000vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100%;
+  height: 11%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.652);
+}
+
+.left-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.header-icon{
+  height: 100%;
+}
+.header-logo{
+  width: 250px;
+  height: 100%;
+}
+
+.header-nav-links{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-nav-links a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-right: 2rem;
+}
+
+.header-nav-links a:hover{
+  color: blue;
+}
+
+.right-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  justify-content: right;
+}
+
+.header-language{
+height: 100%;
+width: 15%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+h4{
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.header-language img{
+  padding-right: 0.4rem;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.header-login{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.SIGNIN,
+.REGISTER{
+  height: 45px;
+  width: 130px;
+  cursor: pointer;
+}
+.SIGNIN{
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.REGISTER{
+  border: none;
+  background-color: rgb(140, 30, 255);
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.SIGNIN:hover{
+  border: 3px solid black;
+  transition-delay: 0.2s;
+}
+
+.REGISTER:hover{
+  opacity: 0.7;
+}
+
+/* MEDIA QUARIES*/
+
+@media screen and (max-width:1280px) {
+  .header-nav-links a{
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .header-logo{
+    width: 200px;
+  }
+  .header-language{
+    width: 110px;
+  }
+}
+
+@media screen and (max-width:1025px) {
+  .header-logo{
+    width: 150px;
+  }
+
+  .header-nav-links a{
+    white-space: nowrap;
+  }
+
+  .header-language{
+    width: 120px;
+  }
+
+  .SIGNIN,
+  .REGISTER{
+    width:90px;
+    font-size: 13px;
+  }
+  h4{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .header-nav-links{
+    display: none;
+  }
+
+
+  .right-header{
+    width: 500px;
+  }
+
+  .header-login{
+    width: 250px;
+  }
+
+  .REGISTER,
+  .SIGNIN{
+    width: 100px;
+  }
+}
+
+
+@media screen and (max-width:476px) {
+  .header-language{
+    display: none;
+  }
+}

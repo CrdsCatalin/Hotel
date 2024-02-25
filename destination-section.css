@@ -1,0 +1,602 @@
+.destinations{
+  width: 98%;
+  height: 10%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.explore-destinations-container{
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending-destinations{
+  margin-bottom: 3rem;
+  font-size: 30px;
+  margin-left: 1rem;
+}
+
+.destination-container{
+  border: 1px solid black;
+  width: 22%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+  height: 80%;
+}
+
+.destination-container:hover{
+  opacity: 0.7;
+}
+
+.destination-container:active{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.destinations-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.destination-picture-container{
+  width: 100%;
+  height: 60%;
+}
+.destination-picture-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.destination-picture-subtext{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  background-color: rgba(29, 131, 165, 0.184);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.destination-picture-subtext span{
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.destination-name{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.destination-location{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.last-minute-deal-container{
+  width: 100%;
+  height: 33.3%;
+}
+
+
+  .last-minute-deal-header{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 20%;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .minute-deal{
+    font-size: 30px;
+  }
+
+  .minute-button{
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .minute-button:hover{
+    opacity: 0.6;
+  }
+
+  .minute-button:active{
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .last-minute-deal-offers{
+    width: 100%;
+    height: 80%;
+  }
+
+  .show-date{
+    margin-left: 2rem;
+  }
+
+  .last-minute-offers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 88%;
+  }
+
+  .deal-container{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .deal-picture-container{
+    width: 100%;
+    height: 40%;
+  }
+
+  .deal-picture-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .review-deal{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    word-spacing: 5px;
+  }
+
+  .hotel-deal-name{
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  .hotel-deal-location{
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .hotel-deal-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  .hotel-deal-price span{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: line-through;
+    font-weight: normal;
+  }
+
+  .hotel-price-facilities{
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  .span-discount{
+    color: white;
+    background-color: red;
+    width: 18%;
+    padding: 4px;
+    text-align: center;
+  }
+
+
+  .member-price{
+    width: 180px;
+    color: white;
+    background-color: darkblue;
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+
+  .discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+
+.hotel-app-container{
+  width: 100%;
+  height: 33.3%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.hotel-app-div{
+  width: 90%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.hotel-app-picture{
+height: 100%;
+width: 33.3%;
+}
+
+
+.hotel-app-picture img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.hotel-app-text{
+width: 50%;
+height: 100%;
+}
+
+.hotel-app-text h2{
+  font-size: 45px;
+  margin-left: 2rem;
+}
+
+.hotel-app-text li{
+  margin-left: 2rem;
+  font-size: 16px;
+}
+
+.scan-qr{
+  margin-left: 2rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.hotel-app-text a{
+  margin-left: 2rem;
+}
+
+.hotel-app-qr{
+width: 17%;
+height: 100%;
+display: flex;
+justify-content: center;
+}
+
+.hotel-app-qr img{
+  width: 80%;
+  height: 45%;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+
+
+/* MEDIA QUARIES*/
+
+
+@media screen and (max-width:1281px) {
+  .discount{
+    width: 280px;
+  }
+
+  .deal-container{
+    width: 250px;
+  }
+
+  .span-discount{
+    width: 65px;
+  }
+
+  .hotel-app-text h2{
+  font-size: 38px;
+}
+
+@media screen and (max-width:1025px) {
+
+  .deal-container {
+      width: 185px;
+    }
+
+    .hotel-deal-name{
+      width: 185px;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 15px;
+    }
+
+    .hotel-deal-location{
+      font-size: 15px;
+    }
+
+    .hotel-deal-price{
+      font-size: 18px;
+    }
+
+    .member-price{
+      font-size: 13px;
+      width: 140px;
+    }
+
+    .discount{
+      width: 230px;
+    }
+
+    .hotel-app-text h2{
+      font-size: 31px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+  .deal-container{
+    width: 130px;
+  }
+
+  .span-discount{
+    font-size: 14px;
+  }
+  .member-price{
+    width: 42px;
+    overflow: hidden;
+
+    white-space: nowrap;
+  }
+
+  .discount{
+    width: 140px;
+  }
+  .hotel-deal-name{
+    width: 143px;
+  }
+  .minute-button{
+    font-size: 18px;
+  }
+
+  .minute-deal{
+    font-size: 25px;
+  }
+
+  .hotel-app-text h2{
+    font-size: 23px;
+  }
+
+  .hotel-app-text li{
+    font-size: 14px;
+  }
+
+  .hotel-app-text a{
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hotel-app-qr img{
+    height: 150px;
+  }
+
+}
+
+@media screen and (max-width:641px) {
+
+.deal-container{
+  width: 100px;
+}
+
+.review-deal{
+  font-size: 11px;
+}
+
+.hotel-deal-name{
+  font-size: 13px;
+  width: 100px;
+}
+.hotel-deal-location{
+  font-size: 13px;
+}
+
+.hotel-deal-price{
+  font-size: 13px;
+}
+.hotel-price-facilities{
+  font-size: 10px;
+}
+
+.span-discount{
+font-size: 12px;
+width: 50px;
+padding-left: 2px;
+padding-right: 2px;
+}
+
+.discount{
+  width: 105px;
+}
+.member-price{
+  font-size: 10px;
+  width: 35px;
+}
+
+.hotel-app-text h2{
+  font-size: 17px;
+}
+
+.hotel-app-text a{
+  font-size: 12px;
+}
+
+.hotel-app-qr img{
+  height: 130px;
+}
+
+}
+
+@media screen and (max-width:476px) {
+  .last-minute-offers{
+    overflow: hidden;
+  }
+
+  .minute-deal{
+    font-size: 20px;
+  }
+
+  .minute-button{
+    font-size: 16px;
+    width: 130px;
+    height: 30px;
+  }
+
+  .destination-name{
+    font-size: 13px;
+    padding-bottom: 0px;
+  }
+
+  .destination-location{
+    font-size: 13px;
+    padding-top: 0px;
+    height: 60px;
+  }
+
+.hotel-app-text h2{
+  margin-left: 1rem;
+}
+
+.hotel-app-text li{
+  margin-left: 1.2rem;
+}
+
+.scan-qr{
+  margin-left: 1rem;
+  font-size: 14px;
+}
+
+.hotel-app-text a{
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.hotel-app-qr img{
+  height: 90px;
+}
+
+.trending-destinations{
+  font-size: 26px;
+}
+
+}
+
+@media screen and (max-width:376px) {
+
+  .trending-destinations{
+    font-size: 20px;
+  }
+
+  .destination-name{
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .destination-location{
+    font-size: 11px;
+  }
+
+  .destination-picture-subtext span{
+    padding-left: 3px;
+  }
+
+  .minute-deal{
+    font-size: 17px;
+  }
+
+  .minute-button{
+    font-size: 14px;
+    height: 25px;
+  }
+  .deal-container{
+    width: 200px;
+  }
+
+  .last-minute-offers{
+    width: 310px;
+  }
+
+  .hotel-app-text a{
+    font-size: 9px;
+  }
+
+  .scan-qr{
+    margin-top: 40px;
+  }
+
+  .hotel-app-text h2{
+    font-size: 14px;
+  }
+
+
+  .hotel-app-text li{
+    font-size: 12px;
+  }
+
+  .hotel-app-qr img{
+    height: 70px;
+  }
+  
+}
